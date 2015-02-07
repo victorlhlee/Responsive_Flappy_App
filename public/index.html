@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>FlappyApp</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div id="container1"> <!-- first container to store Flappy App header and menu -->
-      <div id="header">
-        <h1>Flappy<span id="name">App</span></h1> 
-      </div>  
-        <ul id="main_menu">
-          <li>About</li>
-          <li>Specs</li>
-          <li>Pricing</li>
-          <li>Contact</li>
-          <li>Sign Up</li>
-        </ul>
+  <div id="header"> <!-- first container to store Flappy App header and menu -->
+    <div id="logowrapper">  
+      <h1>Flappy<span id="name">App</span></h1>
+      <div id="logo"></div>
+    </div>  
+    <nav id="main_nav">
+      <ul id="top_menu">
+        <li>About</li>
+        <li>Specs</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li>Sign Up</li>
+      </ul>
+    </nav>  
+  </div> <!-- closes #header -->
+  <div id="main_content">　<!-- second container to store image, features list and description-->
+    <div class="scenery"></div>
+    <ul id="features">
+      <li>Features</li>
+      <li><span>23</span>Different Modes</li>
+      <li><span>500</span>Options</li>
+      <li>Over <span>9000</span>Points</li>
+      <li><span>2X</span>The Flappiness of V1</li>
+    </ul>  
+    <div id="description">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequuntur nostrum vel qui nemo necessitatibus reprehenderit soluta possimus optio suscipit aspernatur laborum doloribus sunt sint, tenetur nulla commodi? Consequuntur, accusantium!</p>
     </div>
-
-    <div id="container2">　<!-- second container to store image, features list and description-->
-      <div class="scenery"></div>
-      <ul id="features">
-        <li>Features</li>
-        <li><span>23 </span> Different Modes</li>
-        <li><span>500 </span> Options</li>
-        <li>Over <span>9000</span> Points</li>
-        <li><span>2X</span> The Flappiness of V1</li>
-      </ul>  
-      <div id="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequuntur nostrum vel qui nemo necessitatibus reprehenderit soluta possimus optio suscipit aspernatur laborum doloribus sunt sint, tenetur nulla commodi? Consequuntur, accusantium!</p>
-      </div>
-    </div>
-    <div id="container3"></div> <!-- third container to store three nav items and footer -->
+  </div>
+  <div id="footer"> <!-- third container to store three nav items and footer -->
+    <nav> 
       <ul id="about">
         <li>About</li>
         <li>Specs</li>
@@ -40,24 +44,29 @@
         <li>Contact</li>
         <li>Sign Up</li>
       </ul>
-
-     <ul id="license">
-       <li>Commercial Licenses</li>
-       <li>Education</li>
-       <li>Case Studies</li>
-       <li>Developer Tools</li>
-       <li>Documentation</li>
-     </ul> 
-
-     <ul id="tutorials">
-       <li>Tutorials</li>
-       <li>Events</li>
-       <li>Blog</li>
-       <li>Social Media</li>
-       <li>Partners</li>
-     </ul>
-
-     <footer>&copy2014 Flappy Inc.</footer>
-
+      <ul id="license">
+        <li>Commercial Licenses</li>
+        <li>Education</li>
+        <li>Case Studies</li>
+        <li>Developer Tools</li>
+        <li>Documentation</li>
+      </ul> 
+      <ul id="tutorials">
+        <li>Tutorials</li>
+        <li>Events</li>
+        <li>Blog</li>
+        <li>Social Media</li>
+        <li>Partners</li>
+      </ul>
+    </nav> 
+    <footer>&copy;2014 Flappy Inc.</footer>
+  </div> <!-- closes #footer -->
 </body>
 </html>
+
+<!-- 
+your indentation is weird in the header
+you need something that wraps scenery and features
+you need something that wraps the 3 uls in container 3
+container 3 closes before you put any content in it
+your stylesheet has a relative reference, make it an absolute reference -->
