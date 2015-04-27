@@ -2,71 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FlappyApp</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>Flappy Bird</title>
 </head>
 <body>
-  <div class="header"> <!--flappy app logo and main menu -->
-    <div class="logowrapper">  
-      <h1>Flappy<span id="name">App</span></h1>
-      <div id="logo"></div>
-    </div>  
-    <nav id="main_nav">
-      <ul id="top_menu">
-        <li>About</li>
-        <li>Specs</li>
-        <li>Pricing</li>
-        <li>Contact</li>
-        <li>Sign Up</li>
-      </ul>
-    </nav>  
-  </div> <!-- closes #header -->
-  <div id="main_content">　<!-- scenery image, features list and description-->
-    <div class="scenery"></div>
-    <ul id="features">
-      <li>Features</li>
-      <li><span>23</span>Different Modes</li>
-      <li><span>500</span>Options</li>
-      <li>Over <span>9000</span>Points</li>
-      <li><span>2X</span>The Flappiness of V1</li>
-    </ul>  
-    <div id="description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequuntur nostrum vel qui nemo necessitatibus reprehenderit soluta possimus optio suscipit aspernatur laborum doloribus sunt sint, tenetur nulla commodi? Consequuntur, accusantium!</p>
-    </div>
-  </div>
-  <div id="footer"> <!-- three menus and footer -->
-    <nav> 
-      <ul id="about">
-        <li>About</li>
-        <li>Specs</li>
-        <li>Pricing</li>
-        <li>Contact</li>
-        <li>Sign Up</li>
-      </ul>
-      <ul id="license">
-        <li>Commercial Licenses</li>
-        <li>Education</li>
-        <li>Case Studies</li>
-        <li>Developer Tools</li>
-        <li>Documentation</li>
-      </ul> 
-      <ul id="tutorials">
-        <li>Tutorials</li>
-        <li>Events</li>
-        <li>Blog</li>
-        <li>Social Media</li>
-        <li>Partners</li>
-      </ul>
-    </nav> 
-    <footer>&copy;2014 Flappy Inc.</footer>
-  </div> <!-- closes #footer -->
+  <div class="header_wrapper">
+    <div class="inner clearfix"><!--clearfix becomes useful when you have a parent div with child divs floating inside of it. -->
+      <div class='logo_wrapper'>
+        <div class="flappy_app">
+          <div class="flappy">flappy</div>
+          <div class="app"><span class="white_text">app</span></div>
+        </div><!--.flappy_app-->
+        <img src="/images/logo.png" class="bird">
+      </div><!--.logo_wrapper-->
+
+      <nav>
+        <ul class="nav_items">
+          <li>about</li>
+          <li>specs</li>
+          <li>pricing</li>
+          <li>contact</li>
+          <li>sign up</li>
+        </ul>
+      </nav>
+    </div><!--.inner-->
+  </header><!--.header_wrapper-->
+
+  <div class="gameinfo_wrapper">
+    <div class="inner">
+      <div class="featured clearfix">
+        <div class="game_pic"></div>
+        <ul class="features_menu">
+          <li class="feature_title">features</li>
+          <li><span class="white_text">23 </span>different models</li>
+          <li><span class="white_text">500 </span>options</li>
+          <li>over<span class="white_text"> 9000 </span>points</li>
+          <li><span class="white_text">2x </span>the flappiness of v1</li>
+        </ul>
+      </div><!--.featured-->
+      <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque fuga quos enim perferendis in dolorum consequuntur molestias necessitatibus obcaecati quaerat, voluptates deserunt soluta unde ratione repudiandae error cupiditate dolore.</p>
+    </div><!--inner-->
+  </div><!--.gameinfo_wrapper-->
+
+ <div class="footer_wrapper">
+    <div class="inner">
+      <div class="footer_links clearfix">
+        <ul class="about margin">
+          <li>about</li>
+          <li>specs</li>
+          <li>pricing</li>
+          <li>contact</li>
+          <li>sign up</li>
+        </ul>
+
+        <ul class='license margin'>
+          <li>commercial licenses</li>
+          <li>education</li>
+          <li>case studies</li>
+          <li>developer tools</li>
+          <li>documentation</li>
+        </ul>
+
+        <ul class="tutorials margin">
+          <li>tutorials</li>
+          <li>events</li>
+          <li>blog</li>
+          <li>social media</li>
+          <li>partners</li>
+        </ul>
+      </div><!--.footer_links-->
+      <p class="copyright"> &copy; 2014 flappy inc.</p>
+    </div><!--.inner-->
+  </div><!--.footer_wrapper-->
+  
 </body>
 </html>
+   
+      
 
-<!-- 
-your indentation is weird in the header
-you need something that wraps scenery and features
-you need something that wraps the 3 uls in container 3
-container 3 closes before you put any content in it
-your stylesheet has a relative reference, make it an absolute reference -->
+
+    
+      
+        
+    
+  
+      
+   
+
+
+
+ 
+
+
+  
